@@ -15,7 +15,7 @@ class Block extends Component {
 
     render () {
         let rowClass = 'row App-block App-block-' + ((this.state.block.count % 2 === 0) ? 'even' : 'odd');
-        //let rowClass = 'row';
+        
         return (
             <div onClick={() => this.toggle(!this.state.expanded)}>
             {

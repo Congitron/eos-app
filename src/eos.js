@@ -17,7 +17,6 @@ class EosClient {
     initialize () {
         return new Promise((resolve, reject) => {
             eos.getInfo({}).then(info => {
-                //console.log('info: ' + JSON.stringify(info));
                 lastBlockId = info.last_irreversible_block_id;
                 resolve();
             });
@@ -42,7 +41,6 @@ class EosClient {
         return new Promise ((resolve, reject) => {
             if (count > 0) {
                 eos.getBlock(blockId).then(block => {
-                    console.log('count: ' + count + ', block: ' + JSON.stringify(block));
                     block.count = count;
                     blocks.push(block);
                     count--;
