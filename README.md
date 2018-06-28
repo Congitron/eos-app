@@ -1,0 +1,2 @@
+# eos-app
+eosjs project
