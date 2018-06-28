@@ -1,3 +1,3 @@
 # eos-app
 
-Block.one eosjs interview project
+React and eosjs
